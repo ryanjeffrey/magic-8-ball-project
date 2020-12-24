@@ -16,8 +16,10 @@ eightBall.askQuestion = function (question) {
 	console.log(question);
 	console.log(answer);
 
-	$("#answer").text(answer)
-	//leave this at the bottom
+	$("#answer").text(answer);
+	$("#ball").effect("shake");
+	
+	//leave this at the bottom of code block
 	$("#answer").fadeIn(4000);
 };
 
@@ -25,8 +27,16 @@ $("#answer").hide();
 
 function questionButton() {
 	$("#answer").hide();
-	question = prompt("I can tell your future with little to some level of accuracy. Try me out by asking a Yes or No question.");
-	eightBall.askQuestion(question);
+	
+	setTimeout (
+		function() {
+			question = prompt("I can tell your future with little to some level of accuracy. Try me out by asking a Yes or No question.");
+			eightBall.askQuestion(question);
+			$("#8ball").attr("src", "https://s3.amazonaws.com/media.skillcrush.com/skillcrush/wp-content/uploads/2016/09/answerside.png");
+		}, 500);
+
+		
+		$("#8ball").attr("src", "https://s3.amazonaws.com/media.skillcrush.com/skillcrush/wp-content/uploads/2016/09/8side.png");
 }
 
 $("#questionButton").click(questionButton);
