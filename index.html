@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8">
-  <title></title>
+  <title>MAGIC 8 BALL</title>
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -18,6 +18,7 @@
 
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/main.css">
+  <link href="http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,700|Montserrat:400,700" rel="stylesheet" type="text/css">
 
   <meta name="theme-color" content="#fafafa">
 </head>
@@ -25,6 +26,37 @@
 <body>
 
   <!-- Add your site or application content here -->
+  <div class="page">
+
+    <header>
+      <h1>MAGIC <span>8</span> BALL</h1>
+    </header>
+
+    <div class="ball">
+
+      <p id="answer" class="answer" align="center" >
+        THIS IS WHERE THE ANSWER GOES
+      </p>
+
+       <img id="8ball" alt="Magic 8 Ball Default Image" src="https://s3.amazonaws.com/media.skillcrush.com/skillcrush/wp-content/uploads/2016/09/magic8ballQuestion.png">
+
+    </div>
+
+    <br><br>
+
+    <div class="button">
+      <button id="questionButton">ASK ME ANYTHING </button>
+    </div>
+
+    <footer>
+      <p>&copy; Skillcrush 2016</p>
+    </footer>
+  </div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.3/jquery-ui.min.js"></script>
+  <script type="text/javascript" src="script.js"></script>
+
   
   <script src="js/vendor/modernizr-3.11.2.min.js"></script>
   <script src="js/plugins.js"></script>
