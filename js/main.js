@@ -17,10 +17,14 @@ eightBall.askQuestion = function (question) {
 	console.log(answer);
 
 	$("#answer").text(answer)
-
+	//leave this at the bottom
+	$("#answer").fadeIn(4000);
 };
 
+$("#answer").hide();
+
 function questionButton() {
+	$("#answer").hide();
 	question = prompt("I can tell your future with little to some level of accuracy. Try me out by asking a Yes or No question.");
 	eightBall.askQuestion(question);
 }
